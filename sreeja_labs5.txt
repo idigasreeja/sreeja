@@ -1,0 +1,52 @@
+1 write shell script to find the given number is positive or negative ?
+ 
+  echo "Enter a Number:"
+  read n
+  if [ $n -gt 0 ]
+  then
+  echo "Number is positive"
+  else
+  if [ $n -eq 0 ]
+  then
+  echo "Number is Zero!"  
+  else
+  echo "Number is Negative!!"
+  fi
+  fi
+
+2.shell script to find the given number is prime number or not.
+
+ echo "enter a number"
+ read num
+ i=2
+ while [$i -lt $num]
+ do
+ if [`expr $num %$i` -eq 0]
+ then
+ echo "$num is not a prime number"
+ echo "since division by $i"
+ exit
+ fi
+ i=`expr $i+1`
+ done
+ echo "$num is a prime number"
+
+3. write a shell script to print the grade of the students based on their marks obtained?
+ PROGRAM:
+ echo "enter the marks obtained by the student"
+ read m
+ if test $m -ge 90
+ then 
+	echo "the grade of the student is A"
+ elif test $m -ge 80
+ then 
+	echo "the grade of the student is B"
+ elif test $m -ge 70
+ then 
+	echo "the grade of the student is C"
+ elif test $m -ge 60
+ then 
+	echo "the grade of the student is D"
+ else 
+ 	echo " the student has failed"
+ fi
