@@ -114,8 +114,12 @@ OUTPUT
  # create a sample file within a directory,then perform the following:
   $chmod u+x sample
   $ls -l sample
+  
+5.use of commands find and xargs?
+#the find command is used to find the file within a directory 
+#the xargs command is used to build and execute commmands from standard inputs.
 
-5.Grep with all possible options
+6.Grep with all possible options
 
 $ cat > sample
 Unix is a programming language that use commands
