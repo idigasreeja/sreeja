@@ -115,5 +115,31 @@ OUTPUT
   $chmod u+x sample
   $ls -l sample
 
- 
+5.Grep with all possible options
+
+$ cat > sample
+Unix is a programming language that use commands
+unix is case sensitive
+It helps to perform multi task
+
+With "-i" option
+$ grep -i "unix" sample
+
+With "-v" option
+$ grep -v "unix" sample
+
+With "-n" option
+grep -n "unix" sample
+
+With "-c" option
+$ grep -c "unix" sample
+
+With "-l" option
+$ grep -l "unix" sample
+
+With "-e" option
+$ grep -e "unix" -e "Unix" sample
+
+With "-x" option
+$ grep -x "unix" sample 
  
