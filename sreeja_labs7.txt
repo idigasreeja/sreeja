@@ -133,7 +133,7 @@ With "-v" option
 $ grep -v "unix" sample
 
 With "-n" option
-grep -n "unix" sample
+$ grep -n "unix" sample
 
 With "-c" option
 $ grep -c "unix" sample
