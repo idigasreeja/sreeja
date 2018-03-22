@@ -1,0 +1,24 @@
+
+1. From first 5 lines of the file replace  manager with directory
+
+Change the extension of the file from lst to txt format and perform the following sed command
+
+$ sed '1,5 s/Manager/Director/' emp.txt
+Id:Name:Designation:Salary:Phone_number
+01|Aishwarya|Director|70000|9203451209
+02|Bhavana|staff|59000|8892396232
+03|Harshitha|Head_staff|50000|9845367130
+04|Devu|Director|80000|7856029121
+05|Mahitha|Director|70000|9206678099
+06|Bharath|Director|80000|7856463902
+07|Sai|Staff|60000|9934560287
+08|Bindu|Staff|60000|8894589012
+09|Sandhya|Staff|59000|7890452316
+10|Mohan|Staff|60000|9873510342
+
+2.Develope a search engine to search for a word or a phrase in all or any file on your computer
+
+echo "enter the pattern to be searched"
+read n
+grep -r1 "$n" "/home"
+
