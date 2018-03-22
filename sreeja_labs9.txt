@@ -16,7 +16,17 @@ Id:Name:Designation:Salary:Phone_number
 09|Sandhya|Staff|59000|7890452316
 10|Mohan|Staff|60000|9873510342
 
-2.Develope a search engine to search for a word or a phrase in all or any file on your computer
+2.Display the details of 1st and 2nd employee
+
+$ sed -n '2,3p' emp.lst
+
+1001|Aishwarya|Director|70000|9203451209
+1002|Bhavana|staff|59000|8892396232
+
+3.salary which starts with 2?
+->sed -d -f 5 "^2" empl.
+
+4.Develope a search engine to search for a word or a phrase in all or any file on your computer
 
 echo "enter the pattern to be searched"
 read n
